@@ -11,12 +11,18 @@
 <body>
     <div id="container">
         <header>
-            <img id="img-arrow" src="../img/circle-right-regular.svg" alt="arrow-icon">
+            <div>
+                <img class="images-header" src="../img/circle-right-regular.svg" alt="arrow-icon">
+            </div>            
+            <div>
+                <img class="images-header" src="../img/user-regular.svg" alt="user-icon">
+            </div>
         </header>
         <div id="wrapper-menu">
-            <img alt="home"/ src="../img/restaurant.png" style="width: 100%;">
-            <!-- <img alt="products" src=""/>
-            <img alt="clients" src=""/> -->
+            <img alt="home-img" src="../img/restaurant.png" style="width: 100%; margin-bottom: 6px;">
+            <img alt="home-img" src="../img/money-bill-wheat-solid.svg" style="width: 100%;" class="images-menu">
+            <img alt="home-img" src="../img/plate-wheat-solid.svg" style="width: 100%;" class="images-menu">
+            <img alt="home-img" src="../img/users-solid.svg" style="width: 100%;" class="images-menu">
         </div>
         <div id="wrapper-content">            
             <div id="wrapper-top-content">
@@ -26,7 +32,9 @@
                     </button>
                 </div>
                 <div id="wrapper-input-search">
-                    <input type="text" id="ipt-search"/>
+                    <input type="text" id="ipt-search" placeholder="Pesquisar...">
+                        <button id="btn-search">S</button>
+                    </input>                    
                 </div>
             </div>
         </div>
