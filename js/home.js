@@ -34,3 +34,9 @@ document.querySelector('#wrapper-img-arrow').addEventListener("click", () => {
         }
     }
 })
+
+document.querySelector("#btn-new").addEventListener("click", () => {
+    if ((document.querySelector("#frame-model-new-dish").style.display === 'none') || (document.querySelector("#frame-model-new-dish").style.display === '')) {
+        document.querySelector("#frame-model-new-dish").style.display = 'flex'
+    }
+})

@@ -4,14 +4,117 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    background: #000;
-    opacity: .4;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 #wrapper-modal {
-    border-radius: 8px;
+    border-radius: 12px;
     width: 90%;
-    max-width: 550px;
-    height: 500px;
+    max-width: 650px;
+    height: 320px;
     background: #fff;
+    border: #4c5157;
+    box-shadow: 0 0 10px #4c5157;
+}
+
+#wrapper-header-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    padding: 5px 12px 5px 12px;
+}
+
+#span-title-cad-plates {
+    font-size: 17px;   
+    font-weight: 700;
+    color: #51585f;
+}
+
+#wrapper-body-modal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 230px;
+    padding: 8px 6px 8px 6px;
+}
+
+#wrapper-footer-modal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 55px;
+    padding: 5px 12px 5px 12px;
+}
+
+#xmark-img {
+    width: 13px;
+    cursor: pointer;
+    filter: invert(38%) sepia(9%) saturate(449%) hue-rotate(169deg) brightness(97%) contrast(91%);
+}
+
+#xmark-img:hover {
+    filter: invert(14%) sepia(12%) saturate(22%) hue-rotate(87deg) brightness(101%) contrast(87%);
+}
+
+#btn-save {
+    background: #0D6EFD;
+    color: #fff;
+    border-radius: 4px;
+    width: 80px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#btn-save:hover {
+    box-shadow: 0 0 12px #0D6EFD;
+}
+
+#btn-cancel {
+    background: #5C636A;
+    color: #fff;
+    border-radius: 4px;
+    width: 80px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 15px;
+}
+
+#btn-cancel:hover {
+    box-shadow: 0 0 12px #4c5157;
+}
+
+.wrapper-labels-inputs {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 60px;
+    padding: 4px 6px 4px 6px;
+}
+
+.labels {
+    font-size: 13px;
+    font-weight: 600;
+    color: #51585f;
+    height: 45%;
+}
+
+.inputs {
+    height: 55%;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #36dd36;
+    outline: none;
+    padding: 5px;
+    background: #f7fff7;
+}
+
+.inputs:focus, .inputs:hover {
+    box-shadow: 0 0 12px #36dd36;
 }
