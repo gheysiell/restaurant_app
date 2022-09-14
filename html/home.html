@@ -10,19 +10,43 @@
 </head>
 <body>
     <div id="container">
-        <header>
-            <div>
+        <header id="header">
+            <div id="wrapper-img-arrow">
                 <img class="images-header" src="../img/circle-right-regular.svg" alt="arrow-icon">
             </div>            
             <div>
                 <img class="images-header" src="../img/user-regular.svg" alt="user-icon">
             </div>
         </header>
-        <div id="wrapper-menu">
-            <img alt="home-img" src="../img/restaurant.png" style="width: 100%; margin-bottom: 6px;">
-            <img alt="home-img" src="../img/money-bill-wheat-solid.svg" style="width: 100%;" class="images-menu">
-            <img alt="home-img" src="../img/plate-wheat-solid.svg" style="width: 100%;" class="images-menu">
-            <img alt="home-img" src="../img/users-solid.svg" style="width: 100%;" class="images-menu">
+        <div id="wrapper-menu">            
+            <div id="wrapper-logo-and-title">
+                <div id="wrapper-logo">
+                    <img alt="home-img" src="../img/restaurant.png" style="width: 40px; height: 40px;">
+                </div>                
+                <div id="wrapper-title">
+                    <span style="white-space: nowrap;">Restaurant App</span>
+                </div>                
+            </div>            
+            <div class="wrapper-menu-tabs">
+                <div class="wrapper-img-menu-tabs">
+                    <div id="wrapper-img-background-pedidos" class="wrapper-img-menu-tabs-background">
+                        <img alt="home-img" src="../img/money-bill-wheat-solid.svg" class="images-menu">
+                    </div>                    
+                </div>                
+                <div class="wrapper-span-menu-tabs">
+                    <span>Pedidos</span>
+                </div>                
+            </div>            
+            <div class="wrapper-menu-tabs">
+                <div class="wrapper-img-menu-tabs">
+                    <div id="wrapper-img-background-cadastros" class="wrapper-img-menu-tabs-background">
+                        <img alt="home-img" src="../img/plate-wheat-solid.svg" class="images-menu">
+                    </div>
+                </div>
+                <div class="wrapper-span-menu-tabs">
+                    <span>Cadastros</span>
+                </div>
+            </div>
         </div>
         <div id="wrapper-content">            
             <div id="wrapper-top-content">
@@ -38,6 +62,9 @@
                 </div>
             </div>
         </div>
+        <iframe id="frame-await-window" src="../html/await_window.html" frameborder="0"></iframe>
+        <iframe id="frame-model-new-dish" src="../html/modal_new_dish.html" frameborder="0"></iframe>
     </div>
+    <script src="../js/home.js" defer></script>
 </body>
 </html>
