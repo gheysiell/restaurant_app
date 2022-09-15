@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/globals.css"/>
     <link rel="stylesheet" href="../css/home.css"/>
     <title>Restaurant App</title>
 </head>
 <body>
-    <div id="container">
+    <div id="container">        
         <header id="header">
             <div id="wrapper-img-arrow">
                 <img class="images-header" src="../img/circle-right-regular.svg" alt="arrow-icon">
@@ -17,54 +18,72 @@
             <div>
                 <img class="images-header" src="../img/user-regular.svg" alt="user-icon">
             </div>
-        </header>
+        </header>        
         <div id="wrapper-menu">            
-            <div id="wrapper-logo-and-title">
-                <div id="wrapper-logo">
-                    <img alt="home-img" src="../img/restaurant.png" style="width: 40px; height: 40px;">
-                </div>                
-                <div id="wrapper-title">
-                    <span style="white-space: nowrap;">Restaurant App</span>
-                </div>                
-            </div>            
-            <div class="wrapper-menu-tabs">
-                <div class="wrapper-img-menu-tabs">
-                    <div id="wrapper-img-background-pedidos" class="wrapper-img-menu-tabs-background">
-                        <img alt="home-img" src="../img/money-bill-wheat-solid.svg" class="images-menu">
-                    </div>                    
-                </div>                
-                <div class="wrapper-span-menu-tabs">
-                    <span>Pedidos</span>
-                </div>                
-            </div>            
-            <div class="wrapper-menu-tabs">
-                <div class="wrapper-img-menu-tabs">
-                    <div id="wrapper-img-background-cadastros" class="wrapper-img-menu-tabs-background">
-                        <img alt="home-img" src="../img/plate-wheat-solid.svg" class="images-menu">
+            <div id="wrapper-top-menu-tabs">
+                <div id="wrapper-logo-and-title">
+                    <div id="wrapper-logo">
+                        <img alt="home-img" src="../img/restaurant.png" style="width: 40px; height: 40px;">
+                    </div>                
+                    <div id="wrapper-title">
+                        <span style="white-space: nowrap;">Restaurant App</span>
+                    </div>                
+                </div>            
+                <div id="wrapper-menu-tab-pedidos" class="wrapper-menu-tabs">
+                    <div id="dad-wrapper-img-menu-tabs-pedidos" class="wrapper-img-menu-tabs">
+                        <div id="wrapper-img-menu-tabs-pedidos" class="wrapper-img-menu-tabs-background">
+                            <img id="img-pedidos" alt="home-img" src="../img/list-check-solid.svg" class="images-menu">
+                        </div>                    
+                    </div>                
+                    <div id="wrapper-span-menu-tabs-pedidos" class="wrapper-span-menu-tabs">
+                        <span>Pedidos</span>
+                    </div>                
+                </div>            
+                <div id="wrapper-menu-tab-cadastros" class="wrapper-menu-tabs">
+                    <div id="dad-wrapper-img-menu-tabs-cadastros" class="wrapper-img-menu-tabs">
+                        <div id="wrapper-img-menu-tabs-cadastros" class="wrapper-img-menu-tabs-background inactive">
+                            <img id="img-cadastros" alt="home-img" src="../img/boxes-stacked-solid.svg" class="images-menu">
+                        </div>
+                    </div>
+                    <div id="wrapper-span-menu-tabs-cadastros" class="wrapper-span-menu-tabs">
+                        <span>Cadastros</span>
                     </div>
                 </div>
-                <div class="wrapper-span-menu-tabs">
-                    <span>Cadastros</span>
+                <div id="wrapper-menu-tab-sobre" class="wrapper-menu-tabs">
+                    <div id="dad-wrapper-img-menu-tabs-sobre" class="wrapper-img-menu-tabs">
+                        <div id="wrapper-img-menu-tabs-sobre" class="wrapper-img-menu-tabs-background inactive">
+                            <img id="img-sobre" alt="home-img" src="../img/info-svgrepo-com (1).svg" class="images-menu">
+                        </div>
+                    </div>
+                    <div id="wrapper-span-menu-tabs-sobre" class="wrapper-span-menu-tabs">
+                        <span>Sobre</span>
+                    </div>
+                </div>                
+            </div>                
+            <div id="wrapper-bottom-menu-tabs">
+                <div id="wrapper-menu-tab-configuracoes" class="wrapper-menu-tabs">
+                    <div id="dad-wrapper-img-menu-tabs-configuracoes" class="wrapper-img-menu-tabs">
+                        <div id="wrapper-img-menu-tabs-configuracoes" class="wrapper-img-menu-tabs-background inactive">
+                            <img id="img-configuracoes" alt="home-img" src="../img/sliders-solid.svg" class="images-menu">
+                        </div>
+                    </div>
+                    <div id="wrapper-span-menu-tabs-configuracoes" class="wrapper-span-menu-tabs">
+                        <span>Configurações</span>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div>    
+        </div>                
         <div id="wrapper-content">            
-            <div id="wrapper-top-content">
-                <div id="wrapper-button">
-                    <button id="btn-new">
-                        Novo
-                    </button>
-                </div>
-                <div id="wrapper-input-search">
-                    <input type="text" id="ipt-search" placeholder="Pesquisar...">
-                        <button id="btn-search">S</button>
-                    </input>                    
-                </div>
+            <div id="wrapper-content-center">
+                <iframe id="frame-content-request" src="../html/content_requests.html" frameborder="0"></iframe>
+                <iframe id="frame-modal-records" src="../html/modal_records.html" frameborder="0" onload="access_frame_modal_records()"></iframe>
             </div>
         </div>
         <iframe id="frame-await-window" src="../html/await_window.html" frameborder="0"></iframe>
-        <iframe id="frame-model-new-dish" src="../html/modal_new_dish.html" frameborder="0"></iframe>
+        <iframe id="frame-modal-new-dish" src="../html/modal_new_dish.html" frameborder="0"></iframe>
+        <iframe id="frame-modal-new-client" src="../html/modal_new_client.html" frameborder="0"></iframe>
+        <iframe id="frame-modal-new-user" src="../html/modal_new_user.html" frameborder="0"></iframe>
     </div>
-    <script src="../js/home.js" defer></script>
+    <script defer src="../js/home.js"></script>
 </body>
 </html>
