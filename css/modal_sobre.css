@@ -1,0 +1,67 @@
+#container {
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+#wrapper-modal {
+    width: 90%;
+    display: flex;
+    max-width: 400px;
+    height: 250px;
+    background: #303030;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #303030;
+    box-shadow: 0 0 10px #303030;
+    border-radius: 8px;
+}   
+
+#wrapper-modal header {
+    display: flex;
+    justify-content: center;
+    color: #36dd36;
+    font-weight: bold;
+    font-size: 14px;
+    height: 15%;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#wrapper-center-content {
+    padding: 30px 5px 30px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    color: #fff;
+}
+
+#wrapper-modal footer {
+    display: flex;
+    justify-content: center;
+    color: #36dd36;
+    height: 10%;
+    width: 100%;
+}
+
+#wrapper-github-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;        
+    flex-direction: column;
+}
+
+#wrapper-github-content a {
+    color: #b3b3b3;
+    text-decoration: none;
+    outline: none;
+}

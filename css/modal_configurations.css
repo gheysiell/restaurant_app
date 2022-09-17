@@ -1,0 +1,225 @@
+#container {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper-modal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 95%;
+    border: 1px solid #303030;
+    border-radius: 8px;
+    background: #303030;
+    box-shadow: 0 0 10px #303030;
+    color: #fff;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    color: #36dd36;
+    font-size: 21px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+#wrapper-top-tabs {
+    height: 6%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#wrapper-top-tab-tema {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    cursor: pointer;    
+    border-top-left-radius: 8px;
+}
+
+#wrapper-top-tab-senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+}
+
+.tab-top-active {
+    border: 1px solid #36dd36;
+    font-size: 17px;
+    font-weight: 600;
+    background: #36dd36;
+    box-shadow: 0 0 4px #36dd36;
+    color: #fff;
+    height: 100%;
+    width: 50%;
+}
+
+.tab-top-inactive {
+    border: 1px solid #868686;
+    font-size: 16px;
+    color: #dbdbdb;
+    height: 93%;
+    width: 50%;
+}
+
+.tab-top-inactive:hover {
+    color: #fff;
+}
+
+#wrapper-content-configurations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;    
+    border-radius: 10px;
+}
+
+#wrapper-tema {
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 94%;
+    padding: 5px;    
+    border: 1px solid #36dd36;
+    box-shadow: 0 0 4px #36dd36;
+    color: #fff;
+}
+
+#wrapper-toggle {
+    display: flex;    
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+}
+
+#wrapper-line-toggle {
+    position: absolute;
+    display: flex;
+    align-items: center;    
+    width: 100px;
+    height: 20px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+
+.toggle-start {
+    left: -3px;    
+}
+
+.toggle-end {
+    right: -3px;                    
+}
+
+#circle-toggle {    
+    position: absolute;    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #36dd36;
+}
+
+#wrapper-img-light {
+    position: absolute;
+    left: 0;    
+}
+
+#wrapper-img-dark {
+    position: absolute;
+    right: 0;
+}
+
+.imgs-toggle {
+    width: 28px;    
+    height: 28px;    
+}
+
+.img-selected {
+    filter: invert(57%) sepia(92%) saturate(620%) hue-rotate(71deg) brightness(107%) contrast(83%);
+}
+
+.img-unselected {
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(244deg) brightness(94%) contrast(106%);
+}
+
+#wrapper-alterar-senha {
+    display: none;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 94%;
+    padding: 5px;    
+    border: 1px solid #36dd36;
+    box-shadow: 0 0 4px #36dd36;
+}
+
+.inputs-alterar-senha {
+    border: 1px solid #36dd36;
+    height: 35px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    padding: 4px;
+    outline: none;
+}
+
+.inputs-alterar-senha:hover, .inputs-alterar-senha:focus {
+    box-shadow: 0 0 8px #36dd36;
+}
+
+.inputs-alterar-senha::placeholder {
+    color: #303030;
+    font-size: 14px;
+}
+
+.wrappers-boxes-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px;    
+}
+
+button {
+    height: 45px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    color: #fff;
+    background: #36dd36;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+button:hover, button:focus {
+    box-shadow: 0 0 8px #36dd36;
+}

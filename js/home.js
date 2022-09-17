@@ -93,7 +93,9 @@ var wrapperMenuTabPedidos = document.querySelector('#wrapper-menu-tab-pedidos')
 if (wrapperMenuTabPedidos) {
     wrapperMenuTabPedidos.addEventListener("click", () => {
         document.querySelector('#frame-modal-records').style.display = 'none'
-        document.querySelector('#frame-content-request').style.display = 'flex'    
+        document.querySelector("#frame-modal-about").style.display = 'none'
+        document.querySelector('#frame-content-request').style.display = 'flex'            
+        document.querySelector("#frame-modal-configurations").style.display = 'none'
     })    
 }
 
@@ -101,8 +103,30 @@ var wrapperMenuTabCadastros = document.querySelector('#wrapper-menu-tab-cadastro
 if (wrapperMenuTabCadastros) {
     wrapperMenuTabCadastros.addEventListener("click", () => {
         document.querySelector('#frame-content-request').style.display = 'none'
+        document.querySelector("#frame-modal-about").style.display = 'none'
         document.querySelector('#frame-modal-records').style.display = 'flex'
+        document.querySelector("#frame-modal-configurations").style.display = 'none'
     })    
+}
+
+var wrapperMenuTabSobre = document.querySelector("#wrapper-menu-tab-sobre")
+if (wrapperMenuTabSobre) {    
+    wrapperMenuTabSobre.addEventListener("click", () => {
+        document.querySelector("#frame-content-request").style.display = 'none'
+        document.querySelector("#frame-modal-records").style.display = 'none'
+        document.querySelector("#frame-modal-about").style.display = 'flex'
+        document.querySelector("#frame-modal-configurations").style.display = 'none'
+    })
+}
+
+var wrapperMenuTabConfiguracoes = document.querySelector("#wrapper-menu-tab-configuracoes")
+if (wrapperMenuTabConfiguracoes) {
+    wrapperMenuTabConfiguracoes.addEventListener("click", () => {
+        document.querySelector("#frame-modal-configurations").style.display = 'flex'
+        document.querySelector("#frame-content-request").style.display = 'none'
+        document.querySelector("#frame-modal-records").style.display = 'none'
+        document.querySelector("#frame-modal-about").style.display = 'none'
+    })
 }
 
 function access_frame_modal_records() {

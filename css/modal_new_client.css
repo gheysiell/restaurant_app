@@ -12,7 +12,7 @@
     border-radius: 12px;
     width: 90%;
     max-width: 650px;
-    height: 320px;
+    height: 380px;
     background: #fff;
     border: #4c5157;
     box-shadow: 0 0 10px #4c5157;
@@ -38,7 +38,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 230px;
+    height: 290px;
     padding: 8px 6px 8px 6px;
 }
 

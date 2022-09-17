@@ -193,6 +193,15 @@ header div {
     display: none;
 }
 
+#frame-modal-about {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
 #frame-modal-new-client {
     width: 100%;
     height: 100%;
@@ -208,6 +217,14 @@ header div {
     position: absolute;
     top: 0px;
     left: 0px;
+    display: none;
+}
+
+#frame-modal-configurations {    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     display: none;
 }
 

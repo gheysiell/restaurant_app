@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/modal_configurations.css">
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper-modal">
+            <header>
+                <span>Configurações</span>
+            </header>
+            <div id="wrapper-content-configurations">
+                <div id="wrapper-top-tabs">
+                    <div id="wrapper-top-tab-tema" class="tab-top-active">
+                        <span>Tema</span>
+                    </div>
+                    <div id="wrapper-top-tab-senha" class="tab-top-inactive">
+                        <span>Trocar senha</span>
+                    </div>
+                </div>
+                <div id="wrapper-tema">                    
+                    <!-- <input id="opt-claro" type="radio" value="Claro">
+                    <label for="opt-claro">Claro</label>
+                    <input id="opt-escuro" type="radio" value="Escuro">
+                    <label for="opt-escuro">Escuro</label> -->
+                    <div id="wrapper-toggle">
+                        <div id="wrapper-img-light">
+                            <img id="img-sun" src="../img/sun-solid.svg" alt="sun-icon" class="imgs-toggle img-selected" style="margin-top: 6px;">
+                        </div>
+                        <div id="wrapper-line-toggle">
+                            <div id="circle-toggle" class="toggle-start">
+
+                            </div>
+                        </div>
+                        <div id="wrapper-img-dark">
+                            <img id="img-moon" src="../img/moon-solid.svg" alt="moon-icon" class="imgs-toggle img-unselected" style="margin-top: 5px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="wrapper-alterar-senha">
+                    <div class="wrappers-boxes-inputs">
+                        <label for="senha-atu">Senha atual</label>
+                        <input id="senha-atu" type="password" class="inputs-alterar-senha" placeholder="Sua senha atual...">    
+                    </div>                                        
+                    <div class="wrappers-boxes-inputs">
+                        <label for="senha-nova">Nova senha</label>
+                        <input id="senha-nova" type="password" class="inputs-alterar-senha" placeholder="Senha que deseja...">
+                    </div>                    
+                    <div class="wrappers-boxes-inputs">
+                        <label for="senha-confirmar">Confirmar senha</label>
+                        <input id="senha-confirmar" type="password" class="inputs-alterar-senha" placeholder="Confirmar nova senha...">
+                    </div>                                        
+                    <button>
+                        Alterar
+                    </button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/modal_configurations.js" defer></script>
+</body>
+</html>
