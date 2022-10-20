@@ -2,12 +2,14 @@
     width: 100%;    
     height: 100%;
     display: flex;
+    flex-direction: column;
+    padding: 14px 13px 14px 13px;
 }
 
 #wrapper-top-content {
     width: 100%;
     height: 40px;    
-    padding-left: 1px;
+    padding: 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
@@ -34,13 +36,18 @@
 }
 
 #wrapper-input-search {
-    width: 200px;
+    width: 350px;
     height: 35px;  
     display: flex;
+    border-radius: 4px;
+}
+
+#wrapper-input-search:focus, #wrapper-input-search:hover {
+    box-shadow: 0 0 8px #11a8ff;
 }
 
 #ipt-search {
-    width: 160px;
+    width: 310px;
     height: 100%;    
     border: 1px solid #11a8ff;
     border-bottom-left-radius: 4px;
@@ -66,4 +73,103 @@
     outline: none;
     border: none;
     cursor: pointer;
+    padding: 6px;
+}
+
+#img-search {
+    width: 100%;
+    height: 100%;
+    filter: invert(99%) sepia(3%) saturate(6057%) hue-rotate(296deg) brightness(109%) contrast(106%);   
+}
+
+#wrapper-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: calc(100% - 90px);
+    padding: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+
+table {
+    width: 100%;
+    background: #fff;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-top: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+}
+
+table tr th {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid #303030;        
+}
+
+table tr td {
+    height: 30px;
+    border-bottom: 1px solid #b9b9b9;
+    margin: 0;
+    padding: 2px;
+}
+
+.border-right {
+    border-right: 1px solid #b9b9b9;
+}
+
+footer {
+    display: flex;
+    height: 40px;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    display: flex;
+    width: auto;   
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer div button {
+    width: 35px;
+    height: 100%;
+    outline: none;
+    color: #303030;
+    cursor: pointer;
+    border: 1px solid #28bd28;
+    background: #f3fff3;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+footer div button:hover {
+    color: #fff;
+    background: #69ff69;
+}
+
+#wrapper-main-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+#wrapper-main-content::-webkit-scrollbar-track {
+    background: silver;
+}
+
+#wrapper-main-content::-webkit-scrollbar-thumb {
+    background: #303030;
+    border: 1px solid #000;
+}
+
+#wrapper-main-content::-webkit-scrollbar-thumb:hover {
+    background: #000;
 }

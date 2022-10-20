@@ -135,8 +135,7 @@ header div {
     flex-direction: column;
     height: calc(100% - 55px);
     width: calc(100% - 50px);;
-    position: absolute;
-    padding: 10px;
+    position: absolute;    
     bottom: 0;
     right: 0;
     transition: width .4s;
@@ -145,7 +144,7 @@ header div {
 #wrapper-content-center {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100%;    
     justify-content: center;
     align-items: center;
 }

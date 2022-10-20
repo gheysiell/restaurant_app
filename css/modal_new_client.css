@@ -119,3 +119,25 @@
 .inputs:focus, .inputs:hover {
     box-shadow: 0 0 12px #36dd36;
 }
+
+.inputs-checkbox {
+    width: 50px;
+}
+
+#wrapper-bloq-cli {
+    display: flex;
+    margin-top: 5px;
+    width: 125px;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;    
+}
+
+#wrapper-bloq-cli label {
+    height: 100%;
+}
+
+#wrapper-bloq-cli input {
+    height: 15px;
+    width: 15px;
+}
